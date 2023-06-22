@@ -14,6 +14,7 @@ public class RegistrationPracticeFormTest extends TestBase {
     @Tag("remote")
     void fullFormTest() {
 
+
         registrationPage.openPage()
                 .closedBanners()
                 .setFirstName(firstName)
