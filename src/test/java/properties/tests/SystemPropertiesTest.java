@@ -3,14 +3,13 @@ package properties.tests;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
+import java.lang.module.Configuration;
+
+import static java.lang.String.format;
+
+
 public class SystemPropertiesTest {
 
-    @Test
-    void systemPropertiesTest() {
-        String browser = System.getProperty("browser");
-
-        System.out.println(browser); // null
-    }
 
     @Test
     void systemPropertiesTest1() {
@@ -45,5 +44,17 @@ public class SystemPropertiesTest {
 
     // gradle property test // mozilla
     //gradle property_test -Dbrowser=opera // opera
+
+    @Test
+    @Tag("hello")
+    void systemPropertiesTest5() {
+        String name = System.getProperty("name", "alice");
+        String message = format("Hello, %s!", name);
+
+        System.out.println(message);
+
+        // gradle hello_test // Hello, alice!
+
+    }
 
 }
