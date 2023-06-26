@@ -35,7 +35,7 @@ public class SystemPropertiesTest {
     }
 
     @Test
-    @Tag("property")
+    @Tag("test")
     void systemPropertiesTest4() {
         String browser = System.getProperty("browser", "mozilla");
 
