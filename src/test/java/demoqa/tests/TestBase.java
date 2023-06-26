@@ -20,7 +20,7 @@ public class TestBase {
         Configuration.browserSize = SystemProperties.browserSizeProperty;
         Configuration.browserVersion = SystemProperties.browserVersionProperty;
         Configuration.baseUrl = SystemProperties.baseUrlProperty;
-        Configuration.remote = SystemProperties.remoteProperty;
+        Configuration.remote = SystemProperties.remoteSelenoidProperty;
         Configuration.pageLoadStrategy = "eager";
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
