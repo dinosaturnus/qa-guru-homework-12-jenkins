@@ -7,9 +7,8 @@ import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import properties.tests.SystemPropertiesTest;
+import properties.tests.SystemProperties;
 
 import java.util.Map;
 
@@ -17,11 +16,11 @@ public class TestBase {
 
     @BeforeAll
     static void beforeAll() {
-        Configuration.browser = System.getProperty("browser", "chrome");
-        Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
-        Configuration.browserVersion = System.getProperty("browserVersion", "112.0.5615.137");
-        Configuration.baseUrl = System.getProperty("baseUrl", "https://demoqa.com");
-        Configuration.remote = System.getProperty("remote", "https://user1:1234@selenoid.autotests.cloud/wd/hub");
+        Configuration.browser = SystemProperties.browserProperty;
+        Configuration.browserSize = SystemProperties.browserSizeProperty;
+        Configuration.browserVersion = SystemProperties.browserVersionProperty;
+        Configuration.baseUrl = SystemProperties.baseUrlProperty;
+        Configuration.remote = SystemProperties.remoteProperty;
         Configuration.pageLoadStrategy = "eager";
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
