@@ -12,7 +12,7 @@ public class SystemProperties {
     public static String browserSizeProperty = System.getProperty("browserSize", "1920x1080");
     public static String browserVersionProperty = System.getProperty("browserVersion", "112.0.5615.137");
     public static String baseUrlProperty = System.getProperty("baseUrl", "https://demoqa.com");
-    public static String remoteSelenoidProperty = System.getProperty("remoteSelenoid", "https://user1:1234@selenoid.autotests.cloud/wd/hub");
+    public static String remoteSelenoidProperty = System.getProperty("remoteUrl", "https://user1:1234@selenoid.autotests.cloud/wd/hub");
 
 
 /*
