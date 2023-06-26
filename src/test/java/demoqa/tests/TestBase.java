@@ -8,7 +8,7 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import properties.SystemProperties;
+import demoqa.properties.SystemProperties;
 
 import java.util.Map;
 
