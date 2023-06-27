@@ -14,7 +14,6 @@ public class RegistrationPracticeFormTest extends TestBase {
     RegistrationPage registrationPage = new RegistrationPage();
 
     @Test
-    @Tag("property")
     @DisplayName("Successful registration form test")
     void fullFormTest() {
         step("Open form", () -> {
